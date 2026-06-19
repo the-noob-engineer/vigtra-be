@@ -1,12 +1,16 @@
 from django.apps import AppConfig
 
+import logging
 
-class CalculationRuleConfig(AppConfig):
+logger = logging.getLogger(__name__)
+
+
+class CalculationConfig(AppConfig):
     default_auto_field = "django.db.models.BigAutoField"
-    name = "modules.calculation_rule"
+    name = "modules.calculation"
 
     def ready(self):
         from .cal_config import CalculationConfigManager
 
-        print("Running the initial for calrule")
+        logger.info("Running the initial for calrule")
         CalculationConfigManager().initial()

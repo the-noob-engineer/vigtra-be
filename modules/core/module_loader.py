@@ -47,7 +47,7 @@ MODULES = [
     ),
     ModuleConfig("Notification Hub", "modules.notification_hub"),
     ModuleConfig("Policy", "modules.policy"),
-    ModuleConfig("Calculation Rule", "modules.calculation_rule"),
+    ModuleConfig("Calculation Rule", "modules.calculation"),
     ModuleConfig("Payment Gateway", "modules.payment_gateway"),
     ModuleConfig("Ticket", "modules.ticket"),
 ]
